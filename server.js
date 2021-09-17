@@ -27,7 +27,7 @@ app.get("/get_weather", (req, res) => {
   res.send(projectData)
 })
 
-app.post("/saveWeatherData", (req, res) => {
+app.post("/saveAll", (req, res) => {
   projectData = {...req.body}
   res.end()
 })
